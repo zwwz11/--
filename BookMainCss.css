@@ -1,0 +1,112 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headerBanner_className{
+    background-color: darkslategray;
+    height: 40px;
+    padding: 10px;
+}
+
+.view_className{
+    background-color: whitesmoke;
+    background-image: url('book.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.view_className div{
+    display: none;
+}
+
+.view_className .userReg_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.view_className .userReg_className p{
+    margin: 3px;
+}
+
+.view_className .userReg_className button{
+    width: 80px;
+    height: 30px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view_className .bookReg_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.view_className .bookReg_className p{
+    margin: 3px;
+}
+
+.view_className .bookReg_className button{
+    width: 80px;
+    height: 30px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view_className .bookReg_className button:hover{
+    cursor: pointer;
+}
+
+.view_className .userList_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.view_className .bookList_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.buttonBanner_className{
+    background-color: darkslategray;
+    height: 30px;
+    padding: 8px;
+}
+
+.buttonTable_className{
+    background-color: rgb(200, 200, 214);
+}
+
+.buttonTable_className button{
+    background-color: white;
+    border: 0;
+    border-radius: 2px;
+    margin: 2px;
+    width: 100px;
+    height: 50px;
+    transition: all .4s;
+}
+
+.buttonTable_className button:hover{
+    background-color: rgb(105, 179, 108);
+    cursor: pointer;
+}
+
+.buttonTable_className button:active{
+    background-color: rgb(146, 207, 148);
+}
