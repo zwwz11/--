@@ -30,12 +30,68 @@
             <button type="button" onclick="AddBook()">도서 등록</button>
         </div>
 
+        <div class="userEdit_className" id="userEdit_id">
+            <p>이름 : <input type="text" id="selectUserName"/>
+                <button type="button" onclick="FindUser()">조회</button>
+            </p>
+            <p>이름 : <span id="findUserName"></span></p>
+            <p>나이 : <span id="findUserAge"></span></p>
+            <p>성별 : <span id="findUserSex"></span></p>
+
+            <p>변경할 이름 : <input type="text" id="changeUserName"/></p>
+            <p>변경할 나이 : <input type="text" id="changeUserAge"/></p>
+            <p>변경할 성별 : 
+                <input type="radio" name="changeUserSex" value="남자" checked/>남자
+                <input type="radio" name="changeUserSex" value="여자"/>여자
+            </p>
+            <button class="EditButton" type="button" onclick="EditUser()">수정</button>
+        </div>
+
+        <div class="bookEdit_className" id="bookEdit_id">
+            <p>제목 : <input type="text" id="selectBookTitle"/>
+                <button type="button" onclick="FindBook()">조회</button>
+            </p>
+            <p>제목 : <span id="findBookTitle"></span></p>
+            <p>저자 : <span id="findBookAuthor"></span></p>
+
+            <p>변경할 제목 : <input type="text" id="changeBookTitle"/></p>
+            <p>변경할 저자 : <input type="text" id="changeBookAuthor"/></p>
+            <button class="EditButton" type="button" onclick="EditBook()">수정</button>
+        </div>
+
+        <div class="userDel_className" id="userDel_id">
+            <p>이름 : <input type="text" id="deleteUserName"/>
+                <button type="button" onclick="DeleteUser()">삭제</button>
+            </p>
+        </div>
+
+        <div class="bookDel_className" id="bookDel_id">
+            <p>제목 : <input type="text" id="deleteBookTitle"/>
+                <button type="button" onclick="DeleteBook()">삭제</button>
+            </p>
+        </div>
+
+        <div class="bookRental_className" id="bookRental_id">
+            <p>도서 : <input type="text" id="rentalBook"/></p>
+            <p>회원 : <input type="text" id="rentalUser"/></p>
+            <button type="button" onclick="RentalBook()">대여</button>
+        </div>
+
+        <div class="bookReturn_className" id="bookReturn_id">
+            <p>도서 : <input type="text" id="returnBook"/></p>
+            <button type="button" onclick="ReturnBook()">반납</button>
+        </div>
+
         <div class="userList_className" id="userList_id">
             <span>회원리스트</span><br>
         </div>
 
         <div class="bookList_className" id="bookList_id">
             <span>도서리스트</span><br>
+        </div>
+
+        <div class="rentalList_className" id="rentalList_id">
+            <span>대여 현황</span><br>
         </div>
     </div>
 
@@ -46,15 +102,15 @@
     <div class="buttonTable_className">
         <button type="button" onclick="ShowTargetView('userReg_id')">회원 등록</button>
         <button type="button" onclick="ShowTargetView('bookReg_id')">도서 등록</button>
-        <button type="button" onclick="">회원 수정</button>
-        <button type="button" onclick="">도서 수정</button>
-        <button type="button" onclick="">도서 대여</button>
-        <button type="button" onclick="">도서 반납</button>
-        <button type="button" onclick="">회원 삭제</button>
-        <button type="button" onclick="">도서 삭제</button>
+        <button type="button" onclick="ShowTargetView('userEdit_id')">회원 수정</button>
+        <button type="button" onclick="ShowTargetView('bookEdit_id')">도서 수정</button>
+        <button type="button" onclick="ShowTargetView('bookRental_id')">도서 대여</button>
+        <button type="button" onclick="ShowTargetView('bookReturn_id')">도서 반납</button>
+        <button type="button" onclick="ShowTargetView('userDel_id')">회원 삭제</button>
+        <button type="button" onclick="ShowTargetView('bookDel_id')">도서 삭제</button>
         <button type="button" onclick="ShowUserList('userList_id')">회원 리스트</button>
         <button type="button" onclick="ShowBookList('bookList_id')">도서 리스트</button>
-        <button type="button" onclick="">대여 현황</button>
+        <button type="button" onclick="ShowRentalList('rentalList_id')">대여 현황</button>
     </div>
 </body>
 </html>

@@ -68,6 +68,29 @@
     cursor: pointer;
 }
 
+.view_className .EditButton{
+    width: 80px;
+    height: 30px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view_className .userEdit_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.view_className .bookEdit_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
 .view_className .userList_className{
     background-color: white;
     border: solid 1px;
@@ -109,4 +132,57 @@
 
 .buttonTable_className button:active{
     background-color: rgb(146, 207, 148);
+}
+
+.view_className .userDel_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.view_className .bookDel_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.view_className .bookRental_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.view_className .bookRental_className button{
+    width: 80px;
+    height: 30px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view_className .rentalList_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.view_className .bookReturn_className{
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.view_className .bookReturn_className button{
+    width: 80px;
+    height: 30px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
